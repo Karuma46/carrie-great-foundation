@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Minion Pro";
+  src: url("../../fonts/MinionPro-Regular.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Minion Pro";
+  src: url("../../fonts/MinionPro-Medium.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Minion Pro";
+  src: url("../../fonts/MinionPro-Semibold.woff");
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Minion Pro";
+  font-weight: 600;
+  margin: 0px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 10px 0px;
+}
+
+a {
+  font-family: "Minion Pro";
+  font-weight: 500;
+  color: $primary;
+  font-size: 14px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: $tertiary;
+  }
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.text_primary {
+  color: $primary;
+}
+
+.text_secondary {
+  color: $secondary;
+}
+
+.text_white {
+  color: white;
+}

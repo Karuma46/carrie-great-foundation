@@ -1,0 +1,120 @@
+#header {
+  height: 100vh;
+  background-image: url("../../img/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#header_top {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 50vh;
+  position: relative;
+}
+#header_topWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  hr {
+    width: 500px;
+    border-color: $tertiary;
+  }
+}
+
+#logoWrap {
+  width: 500px;
+  margin: 0px auto;
+  img {
+    align-self: center;
+    width: 100%;
+  }
+}
+
+nav {
+  width: 500px;
+  margin: 0px auto;
+  ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    a {
+      font-size: 18px !important;
+    }
+  }
+}
+
+#header_bottom {
+  height: 50vh;
+  background-color: rgba(24, 77, 106, 0.9);
+  #quote {
+    width: 300px;
+    color: $secondary;
+    font-size: 32px;
+    text-align: center;
+    margin: 0px auto;
+    position: relative;
+    &::before {
+      content: ' " ';
+      position: absolute;
+      font-size: 200px;
+      font-family: "Minion Pro" !important;
+      left: -60px;
+      top: -50px;
+      color: $tertiary;
+    }
+    &::after {
+      content: ' " ';
+      position: absolute;
+      font-size: 200px;
+      font-family: "Minion Pro" !important;
+      right: -60px;
+      line-height: 0;
+      bottom: 0px;
+      color: $tertiary;
+    }
+    p {
+      font-family: "Minion Pro" !important;
+      font-weight: 400 !important;
+      font-size: 32px !important;
+    }
+    span {
+      font-size: 20px;
+      font-family: "Minion Pro" !important;
+      font-weight: 400 !important;
+    }
+  }
+}
+
+#header_bottomWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  #logoWrap {
+    width: 90%;
+  }
+
+  #header_topWrap {
+    hr {
+      width: 90%;
+      border-color: $tertiary;
+    }
+    nav {
+      width: 90%;
+    }
+  }
+  #header_bottom {
+    height: 50vh;
+    background-color: rgba(24, 77, 106, 0.9);
+    #quote {
+      width: 200px;
+    }
+  }
+}
