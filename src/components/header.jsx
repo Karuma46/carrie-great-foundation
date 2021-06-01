@@ -1,15 +1,15 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import Logo from "assets/svg/logo.svg"
 
-function Header(){
-    return(
+function Header() {
+    return (
         <>
             <header>
                 <div id="innerWrap" className="row m-0 justify-content-between">
                     <div className="col-5 col-md-6 pl-5 align-self-center">
                         <div id="logo">
                             <Link to="/">
-                                <img src={Logo} alt=""/>
+                                <img src={Logo} alt="" />
                             </Link>
                         </div>
                     </div>
@@ -18,9 +18,9 @@ function Header(){
                             <ul>
                                 <Link to="/"><li>Home</li></Link>
                                 <Link to="/about"><li>About</li></Link>
-                                <Link to="/"><li>News</li></Link>
-                                <Link to="/"><li>Contacts</li></Link>
-                                <Link to="/"><li>Donate</li></Link>
+                                <Link to="/news"><li>News</li></Link>
+                                <Link to="/contact-us"><li>Contacts</li></Link>
+                                <Link to="/donate"><li>Donate</li></Link>
                             </ul>
                         </div>
                         <div id="mobileNav">

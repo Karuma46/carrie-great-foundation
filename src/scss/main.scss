@@ -1,11 +1,14 @@
 // Theme
 @import "./theme/colors";
 @import "./theme/text";
+@import "./theme/forms";
 
 // Layout
 @import "./layouts/landing";
 @import "./layouts/content";
 @import "./layouts/about";
+@import "./layouts/contact";
+@import "./layouts/news";
 
 //Components
 @import "./components/header";

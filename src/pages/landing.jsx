@@ -1,23 +1,23 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import Logo from "assets/svg/logo.svg"
 
-function Landing(){
-    return(
+function Landing() {
+    return (
         <>
             <div className="row m-0" id="header">
                 <div className="col-12" id="header_top">
                     <div id="header_topWrap">
                         <div id="logoWrap">
-                            <img src={Logo} alt=""/>
+                            <img src={Logo} alt="" />
                         </div>
-                        <hr/>
+                        <hr />
                         <nav>
                             <ul>
                                 <Link to="/"><li>Home</li></Link>
                                 <Link to="/about"><li>About</li></Link>
-                                <Link to="/"><li>News</li></Link>
-                                <Link to="/"><li>Contacts</li></Link>
-                                <Link to="/"><li>Donate</li></Link>
+                                <Link to="/news"><li>News</li></Link>
+                                <Link to="/contact-us"><li>Contacts</li></Link>
+                                <Link to="/donate"><li>Donate</li></Link>
                             </ul>
                         </nav>
                     </div>

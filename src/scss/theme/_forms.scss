@@ -1,0 +1,43 @@
+form{
+    label{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        display: block;
+        margin: 10px 0px;
+        color: $primary;
+    }
+    input,textarea{
+        background: none;
+        border: 1px solid $lightgrey;
+        height: 45px;
+        width: 100%;
+        outline: none;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        &:focus{
+            border-color: $tertiary;
+        }
+    }
+    textarea{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        min-height: 200px;
+        resize: none;
+    }
+    button{
+        width: 100%;
+    }
+}
+
+button{
+    height: 50px;
+    color: white;
+    border: none;
+    background-color:$primary;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px 20px;
+    cursor: pointer;
+}
