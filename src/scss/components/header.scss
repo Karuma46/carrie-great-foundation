@@ -53,6 +53,21 @@ header {
   }
 }
 
+#mobileMenu{
+  height:100vh;
+  position: absolute;
+  top:100px;
+  ul{
+    padding-right: 30px;
+    a{
+      color: $secondary;
+      font-size: 16px;
+      line-height: 38px;
+      text-align: right;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #nav {
     display: none;

@@ -1,7 +1,18 @@
+import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import Logo from "assets/svg/logo.svg"
 
 function Header() {
+    const [menu, setMenu] = useState(false)
+
+    const handleMenu = () => {
+        if (menu === true) {
+            setMenu(false)
+        } else {
+            setMenu(true)
+        }
+    }
+
     return (
         <>
             <header>
@@ -23,10 +34,32 @@ function Header() {
                                 <Link to="/donate"><li>Donate</li></Link>
                             </ul>
                         </div>
-                        <div id="mobileNav">
-                            <span className="fas fa-bars"></span>
+                        <div id="mobileNav" onClick={handleMenu}>
+                            {
+                                menu ? (
+                                    <span className="fas fa-times"></span>
+                                ) : (
+                                    <span className="fas fa-bars"></span>
+                                )
+                            }
                         </div>
                     </div>
+                    {
+                        menu ? (
+                            <div className="col-12 bg_primary" id="mobileMenu">
+                                <div>
+                                    <ul>
+                                        <Link to="/"><li onClick={handleMenu}>Home</li></Link>
+                                        <Link to="/about"><li onClick={handleMenu}>About</li></Link>
+                                        <Link to="/news"><li onClick={handleMenu}>News</li></Link>
+                                        <Link to="/contact-us"><li onClick={handleMenu}>Contacts</li></Link>
+                                        <Link to="/donate"><li onClick={handleMenu}>Donate</li></Link>
+                                    </ul>
+                                </div>
+                            </div>
+                        ) : ('')
+                    }
+
                 </div>
             </header>
 
